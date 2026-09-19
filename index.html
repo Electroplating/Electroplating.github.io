@@ -4,13 +4,79 @@
 </head>
 <body>
   <div class="profile">
-    <div class="name">杜奕成 (Yicheng Du)</div>
-    <div class="institutions">
-      <div class="institution">国科大杭州高等研究院</div>
-      <div class="institution">中国科学院软件研究所</div>
+    <div class="profile_info">
+      <div class="name">
+        <h1>杜奕成 (Yicheng Du)</h1>
+      </div>
+      <div class="institutions">
+        <div class="institution">
+          <a class="institution_name" href="http://hias.ucas.ac.cn/">国科大杭州高等研究院</a>
+          <div class="institution_address">浙江省杭州市西湖区象山支弄1号 310024</div>
+        </div>
+        <div class="institution">
+          <a class="institution_name" href="http://www.iscas.ac.cn/">中国科学院软件研究所</a>
+          <div class="institution_address">北京市海淀区中关村南四街4号 100190</div>
+        </div>
+      </div>
+      <div class="email">
+        邮箱: <a class="email_address" href="mailto:duyicheng25@mails.ucas.ac.cn">duyicheng25@mails.ucas.ac.cn</a>
+      </div>
     </div>
-    <div class="email">
-      邮箱: <a href="mailto:duyicheng25@mails.ucas.ac.cn">duyicheng25@mails.ucas.ac.cn</a>
+    <div class="profile_photo">
+      <img src="profile_photo.jpg" alt="Yicheng Du" />
     </div>
   </div>
 </body>
+<style>
+  body {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  .profile {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .name {
+    font-family: '微软雅黑';
+    font-weight: bold;
+  }
+  .institution {
+    height: 1.8rem;
+  }
+  .institution_name {
+    color: royalblue;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .institution_address {
+    font-size: 0.8rem;
+  }
+  .institution_name + .institution_address {
+    display: none;
+  }
+  .institution_name:hover + .institution_address {
+    display: inline-block;
+  }
+  .email_address {
+    font-weight: bold;
+  }
+  .profile_photo {
+    display: flex;
+  }
+  .profile_photo img {
+    height: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+  }
+</style>
